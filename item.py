@@ -5,7 +5,7 @@ from flask_jwt import JWT, jwt_required, current_identity
 
 class Item(Resource):
     TABLE_NAME = "items"
-
+    print("gallary")
    
     def get(self, name):
         print("photo")
