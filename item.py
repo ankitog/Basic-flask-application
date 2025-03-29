@@ -8,6 +8,7 @@ class Item(Resource):
 
    
     def get(self, name):
+        print("photo")
         print("hello")
         item =  self.find_by_name(name)
         if item:
