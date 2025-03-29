@@ -13,5 +13,6 @@ def authenticate(username, password):
         return user
     
 def identity(payload):
+    print("security")
     user_id = payload['identity']
     return User.find_my_id(user_id)
