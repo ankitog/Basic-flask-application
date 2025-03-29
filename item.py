@@ -16,6 +16,7 @@ class Item(Resource):
     
     @classmethod
     def find_by_name(cls, name):
+        print("log file")
         conn = sqlite3.connect('data.db')
         cursor = conn.cursor()
 
